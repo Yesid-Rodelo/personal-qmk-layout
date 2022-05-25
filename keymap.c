@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
 MT(MOD_RALT, KC_TAB),    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-OSM(MOD_LSFT),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_MINS,
+OSM(MOD_LSFT),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, OSM(MOD_RSFT),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        KC_LALT,   LOWER,   MT(MOD_LCTL, KC_ENT),     KC_SPC, RAISE, KC_LGUI
                                       //`--------------------------'  `--------------------------'
@@ -63,9 +63,9 @@ OSM(MOD_LSFT),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                     
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
      KC_TILD, KC_ASTR,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      XXXXXXX, XXXXXXX, KC_UP, XXXXXXX, XXXXXXX, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     KC_LCTL, KC_EXLM, KC_LBRC, KC_LCBR, KC_LPRN, XXXXXXX,                       XXXXXXX, KC_LEFT, KC_DOWN,  KC_RGHT, XXXXXXX, XXXXXXX,
+     KC_LCTL, KC_EXLM, KC_LBRC, KC_LCBR, KC_LPRN, KC_MINS,                       XXXXXXX, KC_LEFT, KC_DOWN,  KC_RGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     KC_LSFT, KC_AMPR, KC_RBRC, KC_RCBR, KC_RPRN, XXXXXXX,                      XXXXXXX, KC_HOME, KC_END, KC_INS,  KC_BSLS,  XXXXXXX,
+     KC_LSFT, KC_AMPR, KC_RBRC, KC_RCBR, KC_RPRN, KC_UNDS,                      XXXXXXX, KC_HOME, KC_END, KC_INS,  KC_BSLS,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI,  ADJUST,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
